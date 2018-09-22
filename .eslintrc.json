@@ -1,0 +1,32 @@
+{
+	"extends": "eslint:recommended",
+	"env": {
+		"node": true,
+		"es6": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2017
+	},
+	"rules": {
+		"no-extra-parens": ["warn", "all", {
+			"nestedBinaryExpressions": false
+		}],
+		"valid-jsdoc": ["warn", {
+			"requireReturn": false,
+			"requireReturnDescription": false,
+			"preferType": {
+				"String": "string",
+				"Number": "number",
+				"Boolean": "boolean",
+				"Function": "function",
+				"object": "Object",
+				"date": "Date",
+				"error": "Error"
+			}
+		}],
+
+		"accessor-pairs": "warn",
+		"array-callback-return": "error",
+		"consistent-return": "error",
+		"curly": ["error", "multi-line", "consistent"],
+		"dot-location": ["error", "propert
